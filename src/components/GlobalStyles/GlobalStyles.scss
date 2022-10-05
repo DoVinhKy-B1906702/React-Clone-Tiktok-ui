@@ -4,13 +4,17 @@
 :root {
     --primary--background: rgba(186, 214, 240,0.2);
     --primary:#0984e3 ;
-    --hover--primary: rgba(186, 214, 240,0.4);
+    --hover--primary: #d8faf9;
     --black: #000;
-    --border--focus:#b4d4f3;
+    --border--focus:#c9e0f7;
+    --tooltip--color:#d7e6f3;
 
     //text color
     --text--color: #333;
-
+    --white--text: #fff;
+    --gray--text: #636e72;
+    --gray--color: rgba(99, 110, 114,0.4);
+    
     // Default Layout
     --default--layout-header-height : 60px;
     --default--layout-width : 1150px;
@@ -30,6 +34,9 @@ body {
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     background-color: var(--primary--background);
+}
+button {
+    cursor: pointer;
 }
 
 button, input, [tabindex]  {

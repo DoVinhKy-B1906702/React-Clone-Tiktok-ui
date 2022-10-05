@@ -32,13 +32,17 @@
     width: 100%;
     height: 100%;
 }
+
+.search, .search-result {
+      width: 361px;
+}
+
 .search {
         position: relative;
-        width: 361px;
+      
         height: var(--search-height);
         border-radius: var(--search-border-radius);
         background-color: #e8ecee;
-        overflow: hidden;
         padding-left: 16px;
         display: flex;
         border: 1px solid transparent;
@@ -75,6 +79,14 @@
             border-color: var(--border--focus) ;       
         }
 }
+
+.search-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgba(44, 45, 45, 0.527);
+    padding: 5px 12px 5px 24px;
+}
+
 
 .clear,
 .loading {
