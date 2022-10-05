@@ -1,0 +1,34 @@
+//Menu
+.menu-list {
+    width: 224px;
+    display: inline-block;
+
+
+
+    .menu-item {
+        margin-left: 0px;
+        color: var(--primary);
+    }
+    .menu-item:last-child {
+        border-bottom: 0;
+    }
+
+}
+
+
+.menu-popper {
+    padding-bottom: 8px ;
+}
+// Menu item
+.menu-item {
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 1px solid var(--white--text);
+    background-color: transparent;
+    justify-content: left;
+    padding: 11px 16px;
+    
+    &:hover {
+        background: linear-gradient(90deg, rgb(196, 210, 217) 0%, rgb(215, 215, 243) 47%, rgb(191, 207, 223) 100%);
+    }
+}

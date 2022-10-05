@@ -114,3 +114,15 @@
         background-color: rgba(186, 214, 240,0.8) ;
     }
 }
+
+.more-btn {
+    font-size: 2rem;
+    margin-left: 28px;
+    padding: 4px 8px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    &:hover {
+        border-color: var(--primary);
+    }
+}
+
