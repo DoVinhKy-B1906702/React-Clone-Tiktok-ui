@@ -5,7 +5,7 @@ import Tippy from '@tippyjs/react';
 
 import classNames from 'classnames/bind'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark, faEarthAsia, faEllipsisVertical, faKeyboard, faMagnifyingGlass, faQuestionCircle, faSignIn, faSpinner, faCloudUpload, faUser, faCoins, faGear, faSignOut } from '@fortawesome/free-solid-svg-icons';
+import { faCircleXmark, faEarthAsia, faEllipsisVertical, faKeyboard, faMagnifyingGlass, faQuestionCircle, faSignIn, faSpinner, faUser, faCoins, faGear, faSignOut } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -19,6 +19,8 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '../AccountItem';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
+import { UploadIcon } from '~/components/Icons';
+import Image from '~/components/image';
 
 const cx = classNames.bind(styles);
 
@@ -157,7 +159,7 @@ function Header() {
                                                 <>
                                                 <Tippy  delay={[0,200]} content='Upload Video' placement='bottom'>
                                                         <button className={cx('action-btn')} >
-                                                                <FontAwesomeIcon icon={faCloudUpload} />
+                                                                <UploadIcon />
                                                         </button>
                                                 </Tippy>
                                                 </>
@@ -170,7 +172,12 @@ function Header() {
                                 )}
                                         <Menu items={currentUser ? userMenu : MENU_ITEMS}  onChange={handleMenuChange}>
                                                 {currentUser ? (
-                                                        <img src={images.logo3} className={cx('user-avatar')} alt='avatar' />
+                                                        <Image 
+                                                                src={images.logo3} 
+                                                                className={cx('user-avatar')} 
+                                                                alt='avatar' 
+                                                                fallBack={images.noImage} 
+                                                        />
                                                 ) : (
                                                         
                                                         <button className={cx('more-btn')}>

@@ -3,7 +3,10 @@
     padding: 9px 16px;
     border-radius: 4px;
     font-size: 1.6rem;
-    font-weight: 700;
+    // set font
+    font-weight: 400;
+    font-family: ProximaNova;
+
     border: 1px solid transparent; 
     background-color: var(--white--text);
     user-select: none;
@@ -21,6 +24,8 @@
 }
 .icon + .title,.title + .icon {
     margin-left: 8px;
+   
+   
 }
 .icon {
     display: inline-block;
